@@ -1,0 +1,260 @@
+#contenedor-carrito {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  #carrito-menu {
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    #menu-header {
+      margin-bottom: 10rem;
+      img {
+        width: 10rem;
+      }
+    }
+    #menu-lista {
+      width: 80%;
+      ul {
+        .carrito {
+          padding: 1rem;
+          border-radius: 1rem;
+          width: 100%;
+          background-color: $whiteColor;
+          margin: 1rem 0;
+          font-size: 1.3rem;
+          a {
+            width: 100%;
+            color: $darkLightColor;
+          }
+          i {
+            padding-right: 1rem;
+            color: $darkLightColor;
+            margin-right: 1rem;
+            border-right: 2px solid $darkLightColor;
+          }
+        }
+      }
+    }
+  }
+}
+#carrito-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  #carrito-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    #carrito-titulo {
+      padding: 3rem;
+      background-color: $darkLightColor;
+      width: 100%;
+      margin-bottom: 3rem;
+      h1 {
+        font-weight: $weightHard;
+        color: $whiteColor;
+        text-align: center;
+        font-size: $fontXXXL;
+      }
+    }
+    #carrito-detalles {
+      border-radius: 1rem;
+      overflow-y: scroll;
+      max-height: 30rem;
+      width: 50%;
+      margin-bottom: 3rem;
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+        border-radius: 1rem;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $mainColor;
+        border-radius: 1rem;
+      }
+      .carrito-producto {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: $darkWhite;
+        margin-bottom: 0.5rem;
+        border-radius: 1rem;
+        .carrito-detalles-img {
+          img {
+            width: 7rem;
+          }
+        }
+        .carrito-detalles-producto {
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+        .carrito-detalles-precio {
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+        .carrito-delles-cantidad {
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+        .carrito-detalles-subtotal {
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #carrito-total {
+      padding: 1rem;
+      margin-bottom: 3rem;
+      border-radius: 1rem;
+      background-color: $darkWhite;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .carrito-total-titulo {
+        h2 {
+          font-weight: 700;
+          font-size: $fontXXL;
+        }
+      }
+      .carrito-total-precios {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        width: 100%;
+        .carrito-total-subtotal {
+          border-bottom: 2px solid $lightGrey;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.25rem 0;
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+        .carrito-total-total {
+          border-bottom: 2px solid $lightGrey;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.25rem 0;
+          h2 {
+            font-size: $fontXL;
+            font-weight: $weightHard;
+            text-align: center;
+          }
+          h3 {
+            font-size: $fontL;
+            font-weight: $weightMain;
+            text-align: center;
+          }
+        }
+      }
+      .carrito-total-comprar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button {
+          background-color: $mainColor;
+          color: $whiteColor;
+          border-radius: 1rem;
+          border: none;
+          padding: 1rem;
+          font-size: $fontL;
+          margin-bottom: 0.5rem;
+          &:hover {
+            background-color: $darkLightColor;
+            transition: all 0.3s;
+            cursor: pointer;
+          }
+        }
+        a {
+          color: $mainColor;
+          &:hover {
+            color: $darkColor;
+            transition: all 0.3s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    #carrito-vacio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        h2{
+            font-size: $fontXXL;
+            font-weight: $weightHard;
+            text-align: center;
+        }
+        i{
+            font-size: $fontXXL;
+            font-weight: $weightHard;
+            margin-right: 1rem;
+            text-align: center;
+        }
+        a{
+            color: $darkLightColor;
+            font-size: $fontXL;
+            text-align: center;
+            &:hover{
+                color: $darkColor;
+                transition: all .3s;
+            }
+        }
+    }
+  }
+}

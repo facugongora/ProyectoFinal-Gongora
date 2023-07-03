@@ -1,0 +1,75 @@
+#principal-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #principal-footer-nav {
+    background-color: $darkGrey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    padding: 2rem 20rem;
+    .principal-footer-nav-inicioProductos {
+      ul {
+        li {
+          padding: 0.5rem 0;
+          a {
+            color: $lightColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .principal-footer-nav-somosContacto {
+      ul {
+        li {
+          padding: 0.5rem 0;
+          a {
+            color: $lightColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .principal-footer-nav-carrito {
+      ul {
+        li {
+          a {
+            color: $lightColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  #principal-footer-copy {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $blackColor;
+    color: $grey;
+    h3 {
+      font-weight: 400;
+    }
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+  .footer-wsp{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    &:hover{
+      scale: 1.1;
+      transition: all .3s;
+      
+    }
+  }
+}

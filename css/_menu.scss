@@ -1,0 +1,40 @@
+#menu {
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    #menu-header {
+      margin-bottom: 10rem;
+      img {
+        width: 10rem;
+      }
+    }
+    #menu-lista {
+      width: 80%;
+      ul {
+        .carrito {
+          padding: 1rem;
+          border-radius: 1rem;
+          width: 100%;
+          background-color: $whiteColor;
+          margin: 1rem 0;
+          font-size: 1.3rem;
+          a {
+            width: 100%;
+            color: $darkLightColor;
+          }
+          i {
+            padding-right: 1rem;
+            color: $darkLightColor;
+            margin-right: 1rem;
+            border-right: 2px solid $darkLightColor;
+          }
+        }
+      }
+    }
+  }
